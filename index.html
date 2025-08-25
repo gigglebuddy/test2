@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top left, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      font-size: 5rem;
+      background: linear-gradient(45deg, #ff6b6b, #f8e9a1, #2ecc71, #3498db, #9b59b6);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient 10s ease infinite, float 3s ease-in-out infinite;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    @keyframes float {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-20px);}
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>
